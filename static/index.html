@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eora LLM Bot</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Eora LLM Bot</h1>
+        <p class="subtitle">Задайте вопрос — бот ответит с ссылками на релевантные кейсы.</p>
+      </header>
+
+      <section class="ask">
+        <label for="question" class="label">Ваш вопрос</label>
+        <textarea id="question" rows="3" placeholder="Например: Что вы можете сделать для ритейлеров?"></textarea>
+        <div class="actions">
+          <button id="askBtn">Спросить</button>
+          <button id="sampleBtn" class="ghost">Пример вопроса</button>
+        </div>
+      </section>
+
+      <section id="status" class="status hidden"></section>
+
+      <section id="result" class="result hidden">
+        <h2>Ответ</h2>
+        <div id="answer" class="answer"></div>
+        <h3>Источники</h3>
+        <ul id="citations" class="citations"></ul>
+      </section>
+
+      <footer>
+        <span>© Eora</span>
+      </footer>
+    </div>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
